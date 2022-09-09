@@ -395,13 +395,15 @@ body{
     color: #FFFFFF;
     overflow: auto;
     transform: translateY(100%);
-    transition: transform var(--transition-dur-and-func);}
+    transition: transform var(--transition-dur-and-func);
+    padding: 63px 24px;}
 .portfolio-link:hover .portfolio-overlay,
 .portfolio-link:focus .portfolio-overlay {
     transform: translateY(0);}   
 .portfolio-main-text {
     padding: 20px 24px;
-    border: 1px solid var(--main-portfolio-foto-border);}
+    border: 1px solid var(--main-portfolio-foto-border);
+    border-top: none;}
 .main-portfolio-title {
     font-style: normal;
     font-size: 18px;
