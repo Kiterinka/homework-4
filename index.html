@@ -15,9 +15,9 @@
       <nav class="page-header-container">
         <a class="logo" href="./index.html">Web<span class="logo-dark">Studio</span></a>
         <ul class="page-header-container">
-          <li><a class="header-list-link" href="./index.html">Студія</a></li>
-          <li><a class="header-list-link" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="header-list-link" href="#">Контакти</a></li>
+          <li class="header-list-link-group"><a class="header-list-link header-list-after" href="./index.html">Студія</a></li>
+          <li class="header-list-link-group"><a class="header-list-link" href="./portfolio.html">Портфоліо</a></li>
+          <li class="header-list-link-group"><a class="header-list-link" href="#">Контакти</a></li>
         </ul>
       </nav>
       <ul class="page-header-container">
@@ -41,7 +41,7 @@
       <section class="title">
         <div class="container">
         <h1 class="title-item">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button title-button" type="button">Замовити послугу</button>
+        <button class="button title-button" data-modal-open type="button" >Замовити послугу</button>
         </div>
       </section>
       <section class="main-description-box">
@@ -100,17 +100,23 @@
         <div class="container">
         <h2 class="main-title-icon">Чим ми займаємося</h2>
         <ul class="main-images">
-          <li>
-            <img src=./images/img(1).jpg alt="людина працює з телефоном"
-            width="370">
+          <li class="main-images-foto-sense">
+            <img class="main-images-foto-desk" src=./images/img(1).jpg alt="людина працює з телефоном" width="370"/>
+            <div class="main-images-description">
+              <p class="main-images-text">Десктопні додатки</p>
+            </div>
+            </li>
+          <li class="main-images-foto-sense">
+            <img class="main-images-foto-desk" src=./images/img(2).jpg alt="людина працює за планшетом" width="370"/>
+            <div class="main-images-description">
+              <p class="main-images-text">Мобільні додатки</p>
+            </div>
           </li>
-          <li>
-            <img src=./images/img(2).jpg alt="людина працює за планшетом"
-            width="370"/>
-          </li>
-          <li>
-            <img src=./images/img(3).jpg alt="людина працює за комп'ютером"
-            width="370"/>
+          <li class="main-images-foto-sense">
+            <img  class="main-images-foto-desk" src=./images/img(3).jpg alt="людина працює за комп'ютером" width="370"/>
+            <div class="main-images-description">
+              <p class="main-images-text">Дизайнерські рішення</p>
+            </div>
           </li>
         </ul>
         </div>
@@ -377,5 +383,15 @@
     </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal >
+    <div class="modal">
+      <button class="modal-close-btn" type="button" data-modal-close>
+        <svg class="modal-close-icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+     </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
